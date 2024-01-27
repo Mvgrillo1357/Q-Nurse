@@ -273,8 +273,9 @@ def get_bqm(data, stitch_kwargs=None):
 
 
 if __name__ == "__main__":
-    file_name = sys.argv[1]
-    full_file = os.path.abspath(os.path.join("instances1_24", file_name))
+    #file_name = sys.argv[1]
+    #full_file = os.path.abspath(os.path.join("instances1_24", file_name))
+    full_file = os.path.abspath(os.path.join("instances1_24\Instance1.ros"))
     # data = ET.parse(full_file)
     data = untangle.parse(full_file)
     data = data.SchedulingPeriod
