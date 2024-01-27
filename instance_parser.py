@@ -4,7 +4,7 @@ import neal
 import scheduler
 from dwave.system.samplers import DWaveSampler
 from dwave.system.composites import EmbeddingComposite
-from dwave.system.composites import chain_strength
+#from dwave.system import chain_strength
 
 
 
@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
     if qpu:
         sampleset = sampler.sample(
-            bqm, chain_strength=chain_strength, num_reads=1000)
+            bqm, chain_strength=sampler.chain_strength, num_reads=1000)
     else:
         sampleset = sampler.sample(bqm, num_reads=1000)
 
