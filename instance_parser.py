@@ -2,6 +2,10 @@ import sys
 from pprint import pprint
 import neal
 import scheduler
+from dwave.system.samplers import DWaveSampler
+from dwave.system.composites import EmbeddingComposite
+from dwave.system.composites import chain_strength
+
 
 
 class Nurse:
