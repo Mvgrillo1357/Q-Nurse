@@ -9,7 +9,7 @@ class Shift:
         self.day = day
 
     def __str__(self):
-        return f"{nurseID}_{day}"
+        return f"{self.nurseID}_{self.day}"
 
 
 def get_label(nurseID, day, shift_type):
