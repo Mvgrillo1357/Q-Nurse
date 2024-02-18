@@ -82,7 +82,7 @@ def parse(path):
 
 
 if __name__ == "__main__":
-    path = sys.argv[1]
+    path = "./instances1_24/Instance_my.ros"
     shift_types, nurses, horizon = parse(path)
     qpu = False
 
